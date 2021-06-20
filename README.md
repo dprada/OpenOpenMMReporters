@@ -2,7 +2,7 @@
 
 [//]: # (Badges)
 [![GitHub Actions Build Status](https://github.com/uibcdf/OpenOpenMMReporters/workflows/CI/badge.svg)](https://github.com/uibcdf/OpenOpenMMReporters/actions?query=workflow%3ACI)
-[![codecov](https://codecov.io/gh/uibcdf/OpenOpenMMReporters/branch/master/graph/badge.svg)](https://codecov.io/gh/uibcdf/OpenOpenMMReporters/branch/master)
+[![codecov](https://codecov.io/gh/uibcdf/OpenOpenMMReporters/branch/main/graph/badge.svg)](https://codecov.io/gh/uibcdf/OpenOpenMMReporters/branch/main)
 
 
 Short description of the project.
