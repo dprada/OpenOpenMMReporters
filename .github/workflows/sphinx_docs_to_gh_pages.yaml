@@ -22,7 +22,6 @@ jobs:
           auto-update-conda: false
           auto-activate-base: false
           show-channel-urls: true
-          use-only-tar-bz2: true
       - name: Running the Sphinx to gh-pages Action
-        uses: uibcdf/action-sphinx-docs-to-gh-pages@0.0.1-beta.17
+        uses: uibcdf/action-sphinx-docs-to-gh-pages@0.0.1-beta.18
 
