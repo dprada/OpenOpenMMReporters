@@ -1,15 +1,21 @@
 name: test
+
 channels:
 
   - conda-forge
-
   - defaults
+
 dependencies:
-    # Base depends
+
+  # from development
   - python
   - pip
+  - numpy
+  - tqdm
+  - openmm
+  - jupyterlab
 
-    # Testing
+  # here
   - pytest
   - pytest-cov
   - codecov

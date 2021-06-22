@@ -1,0 +1,19 @@
+name: development
+
+channels:
+
+  - conda-forge
+  - defaults
+
+dependencies:
+
+  # from production
+  - python
+  - pip
+  - numpy
+  - tqdm
+  - openmm
+
+  # here
+  - jupyterlab
+
