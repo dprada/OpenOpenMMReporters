@@ -23,7 +23,7 @@ jobs:
           auto-activate-base: false
           show-channel-urls: true
       - name: Running the Sphinx to gh-pages Action
-        uses: uibcdf/action-sphinx-docs-to-gh-pages@0.0.1-beta.23
+        uses: uibcdf/action-sphinx-docs-to-gh-pages@0.0.1-beta.24
         with:
           branch: main
           dir_docs: docs
