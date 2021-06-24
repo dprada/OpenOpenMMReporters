@@ -37,7 +37,7 @@ jobs:
           platform_linux-64: true
           platform_osx-64: true
           platform_win-64: true
-          user_channel: uibcdf
+          user: uibcdf
           label: dev
           token: ${{ secrets.ANACONDA_UIBCDF_TOKEN}}
 
