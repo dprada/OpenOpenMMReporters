@@ -31,7 +31,6 @@ jobs:
       - name: Build and upload the conda packages
         uses: uibcdf/action-build-and-upload-conda-packages@0.0.1-beta.1
         with:
-          branch: main
           meta_yaml_dir: devtools/conda-build
           python-version: ${{ matrix.python-version }}
           platform_linux-64: true
@@ -39,5 +38,5 @@ jobs:
           platform_win-64: true
           user: uibcdf
           label: dev
-          token: ${{ secrets.ANACONDA_UIBCDF_TOKEN}}
+          token: ${{ secrets.ANACONDA_UIBCDF_TOKEN }}
 
