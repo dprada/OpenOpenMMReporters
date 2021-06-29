@@ -21,8 +21,7 @@ docs:
         sphinx-markdown-tables
         matplotlib
 
-conda-deployment:
-        <<: *production
+conda-build:
         anaconda-client
         conda-build
 
