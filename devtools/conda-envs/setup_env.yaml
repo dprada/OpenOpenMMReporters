@@ -1,9 +1,7 @@
 channels:
-- conda-forge
 - default
 dependencies:
 - python
+- setuptools
 - numpy
-- tqdm
-- openmm
-- jupyterlab
+- versioneer

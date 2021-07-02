@@ -1,26 +1,12 @@
-name: test
-
 channels:
-
-  - conda-forge
-  - defaults
-
+- conda-forge
+- default
 dependencies:
-
-  # from development
-  - python
-  - pip
-  - numpy
-  - tqdm
-  - openmm
-  - jupyterlab
-
-  # here
-  - pytest
-  - pytest-cov
-  - codecov
-
-    # Pip-only installs
-  #- pip:
-  #  - codecov
-
+- python
+- numpy
+- tqdm
+- openmm
+- pytest
+- pip
+- pytest-cov
+- codecov
