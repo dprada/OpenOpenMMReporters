@@ -1,25 +1,15 @@
-name: docs
-
 channels:
-
-  - conda-forge
-  - defaults
-
+- conda-forge
+- default
 dependencies:
-
-  # from development
-  - python=3.7
-  - numpy
-  - tqdm
-  - openmm
-  - jupyterlab
-
-  # here
-  - sphinx
-  - sphinx_rtd_theme
-  - sphinxcontrib-bibtex
-  - nbsphinx
-  - recommonmark
-  - sphinx-markdown-tables
-  - matplotlib
-
+- python
+- numpy
+- tqdm
+- openmm
+- sphinx
+- sphinx_rtd_theme
+- sphinxcontrib-bibtex
+- nbsphinx
+- recommonmark
+- sphinx-markdown-tables
+- jupyterlab

@@ -1,6 +1,6 @@
 package:
   name: openopenmmreporters
-  version: 0.1.0
+  version: "{{ environ['GIT_DESCRIBE_TAG'] }}"
 
 source:
   path: ../../
@@ -10,14 +10,16 @@ build:
 
 requirements:
   build:
-    - python  {{ python }}
+    - python
     - setuptools
-    - numpy 
+    - numpy
+    - versioneer
 
   run:
-    - python  {{ python }}
+    - python
     - numpy
     - openmm
+    - tqdm
 
 about:
   home: https://uibcdf.org

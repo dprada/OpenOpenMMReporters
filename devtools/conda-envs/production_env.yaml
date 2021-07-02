@@ -1,16 +1,8 @@
-name: production
-
 channels:
-
-  - conda-forge
-  - defaults
-
+- conda-forge
+- default
 dependencies:
-
-  # here
-  - python
-  - pip
-  - numpy
-  - tqdm
-  - openmm
-
+- python
+- numpy
+- tqdm
+- openmm

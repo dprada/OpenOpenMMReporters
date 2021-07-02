@@ -15,6 +15,7 @@
 # Incase the project was not installed
 import os
 import sys
+
 sys.path.insert(0, os.path.abspath('..'))
 
 import openopenmmreporters
@@ -27,9 +28,9 @@ copyright = ("2021, UIBCDF Lab at the Mexico City Childrens Hospital Federico Go
 author = 'Liliana M. Moreno Vargas & Diego Prada Gracia'
 
 # The short X.Y version
-version = ''
+version = openopenmmreporters.__version__.split('+')[0]
 # The full version, including alpha/beta/rc tags
-release = ''
+release = openopenmmreporters.__version__
 
 
 # -- General configuration ---------------------------------------------------
