@@ -2,9 +2,8 @@ name: Sphinx docs to gh-pages
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches:
+      - main
 
   workflow_dispatch:
 
@@ -17,11 +16,15 @@ jobs:
       - name: Make conda environment
         uses: conda-incubator/setup-miniconda@v2    # https://github.com/conda-incubator/setup-miniconda
         with:
+          python-version: 3.7
           environment-file: devtools/conda-envs/docs_env.yaml
-          activate-environment: docs
           auto-update-conda: false
           auto-activate-base: false
           show-channel-urls: true
+      - name: Installing the library
+        shell: bash -l {0}
+        run: |
+          python setup.py install
       - name: Running the Sphinx to gh-pages Action
-        uses: uibcdf/action-sphinx-docs-to-gh-pages@0.0.1-beta.25
+        uses: uibcdf/action-sphinx-docs-to-gh-pages@v1.0-beta.1
 
