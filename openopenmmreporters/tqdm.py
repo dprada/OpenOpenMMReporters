@@ -7,6 +7,8 @@ class TQDMReporter(object):
 
         self._pbar = tqdm(total=total_n_steps, position=0, leave=True)
         self._reportInterval = int(total_n_steps/reportInterval)
+        if self._reportInterval==0:
+            self._reportInterval=1
         self._total_n_steps = total_n_steps
         self._needsPositions = False
         self._needsVelocities = False
